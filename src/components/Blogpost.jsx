@@ -1,17 +1,9 @@
 import { useState, useEffect } from 'react';
 
-const NOTION_BLOG_ID = "02382c790ccb47aa8dd21892cdab2eb9"
 
-async function getAllPosts() {
-  try {
-    const response = await fetch(`https://notion-api.splitbee.io/v1/table/${NOTION_BLOG_ID}`);
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error(error);
-    return null;
-  }
-}
+import '../static/css/blogpost.css'
+
+import getAllPosts from './getAllPosts';
 
 export default function Blog() {
 
@@ -28,14 +20,16 @@ export default function Blog() {
   return (
     <div className="posts">
       {Object.values(posts).map((post) => (
-        <div key={post.id}>
-          <h2>{post.Page}</h2>
-          <p>{post.Preview}</p>
-        </div>
+        <main>
+            <div className="card">
+                <img src={post.Preview_Image} alt="Card Image"></img>
+                <h5>{post.Page}</h5>
+                <p>{post.Preview}</p>
+                <a href="#">Check it</a>
+            </div>
+        </main>
+            
       ))}
-      {/* {posts !== {} && posts.forEach(post => {
-          console.log(post)
-        })} */}
     </div>
   );
 }

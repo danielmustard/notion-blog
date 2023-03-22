@@ -2,12 +2,16 @@
     line-height: var(--font-lineheight-1);
   }
 
+.posts{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 main {
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
   justify-content: space-around;
-  /* max-inline-size: calc(var(--size-content-1) * 4); */
+  max-inline-size: calc(var(--size-content-1) * 4);
   gap: var(--size-5);
   padding: var(--size-5);
 }
