@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 
-import '../static/css/blogpost.css'
+import '../static/css/all-posts.css'
 
 import getAllPosts from './getAllPosts';
 

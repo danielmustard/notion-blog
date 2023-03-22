@@ -10,9 +10,9 @@ function Navbar() {
         </div>
         <div className="right">
           <ul>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/blog">Blog</a>
           </ul>
         </div>
       </nav>

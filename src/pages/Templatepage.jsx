@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { NotionRenderer } from "react-notion";
 
+import '../static/css/blogpost.css'
+
 function Templatepage() {
   const [blocks, setBlocks] = useState(null);
 
