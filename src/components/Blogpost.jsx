@@ -19,16 +19,23 @@ export default function Blog() {
 
   return (
     <div className="posts">
+      <h1 style={{height:100}}>Latest</h1>
       {Object.values(posts).map((post) => (
         <main>
-            <div className="card">
-                <img src={post.Preview_Image} alt="Card Image"></img>
-                <h5>{post.Page}</h5>
-                <p>{post.Preview}</p>
-                <a href={'/post/'+post.id}>Check it</a>
+          <div className="card">
+            <div className="datetime">
+              <time>{post.Date}</time>
             </div>
+            <div className="title-preview">
+              <h5>{post.Page}</h5>
+              <p>{post.Preview}</p>
+            </div>
+            {/* <img src={post.Preview_Image} alt="Card Image"></img> */}
+
+            <a className='read-more' href={"/post/" + post.id}>Read more</a>
+            <hr></hr>
+          </div>
         </main>
-            
       ))}
     </div>
   );
