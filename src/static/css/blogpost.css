@@ -5,3 +5,7 @@ main.notion{
     display: flex;
     justify-content: center;
 }
+
+figure > div{
+    padding-bottom: 10px !important;
+}

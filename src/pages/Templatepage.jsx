@@ -3,7 +3,7 @@ import axios from "axios";
 import { NotionRenderer } from "react-notion";
 
 import '../static/css/blogpost.css'
-
+import "prismjs/themes/prism-tomorrow.css";
 const pageRenderID = document.URL.split("/post/")[1];
 
 function Templatepage() {
