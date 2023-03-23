@@ -16,11 +16,7 @@ function AppRoutes() {
 
       {/* Route for About Page */}
       <Route path="/about" element={<><Navbar/><About/></>} />
-
-      {/* Route for blog page */}
-
-      <Route path="/blog" element={<><Navbar/><Blogpost/></>} />
-
+      
       <Route path="/post/*" element={<><Navbar/><Templatepage/></>} />
       
 

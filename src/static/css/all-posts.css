@@ -2,6 +2,7 @@
     line-height: var(--font-lineheight-1);
   }
 
+
 .posts{
   display: flex;
   flex-direction: column;
@@ -38,8 +39,8 @@ main {
   align-self: center;
   justify-self: center;
 }
-.read-more{
-  color: black;
+.read-more, a.read-more{
+  color: black !important;
 }
 hr{
   padding: 0;
