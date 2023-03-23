@@ -25,7 +25,7 @@ export default function Blog() {
                 <img src={post.Preview_Image} alt="Card Image"></img>
                 <h5>{post.Page}</h5>
                 <p>{post.Preview}</p>
-                <a href="#">Check it</a>
+                <a href={'/post/'+post.id}>Check it</a>
             </div>
         </main>
             

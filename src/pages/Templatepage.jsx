@@ -4,13 +4,15 @@ import { NotionRenderer } from "react-notion";
 
 import '../static/css/blogpost.css'
 
+const pageRenderID = document.URL.split("/post/")[1];
+
 function Templatepage() {
   const [blocks, setBlocks] = useState(null);
 
   useEffect(() => {
     async function fetchData() {
       const response = await axios.get(
-        "https://notion-api.splitbee.io/v1/page/bd73f597-3a78-4a88-b323-5d28d64e625b"
+        `https://notion-api.splitbee.io/v1/page/${pageRenderID}`
       );
       setBlocks(response.data);
     }

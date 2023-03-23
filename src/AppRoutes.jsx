@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import Blogpost from "./components/Blogpost"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
+import Templatepage from "./pages/Templatepage"
 
 
 function AppRoutes() {
@@ -19,6 +20,8 @@ function AppRoutes() {
       {/* Route for blog page */}
 
       <Route path="/blog" element={<><Navbar/><Blogpost/></>} />
+
+      <Route path="/post/*" element={<><Navbar/><Templatepage/></>} />
       
 
     </Routes>
