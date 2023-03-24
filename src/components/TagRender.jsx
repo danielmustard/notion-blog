@@ -22,8 +22,6 @@ export default function TagRender(tags) {
             color: "#ACDDDE",
             icon: "🐚"
         }
-
-
     }
     return (
       <div className="tagContainer">
