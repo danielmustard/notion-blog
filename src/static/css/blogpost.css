@@ -1,11 +1,15 @@
 main.notion{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 .notion-block{
     display: flex;
     justify-content: center;
 }
 
+a.notion-link{
+    color: black !important;
+}
 figure > div{
     padding-bottom: 10px !important;
 }

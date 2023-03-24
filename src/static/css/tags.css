@@ -1,0 +1,14 @@
+.tag{
+    width: fit-content;
+    padding: 3px 12px 3px 12px;
+    border-radius: 3px;
+}
+
+.tagContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+.child{
+    display: flex;
+    justify-content: center;
+}

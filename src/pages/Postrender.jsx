@@ -6,7 +6,7 @@ import '../static/css/blogpost.css'
 import "prismjs/themes/prism-tomorrow.css";
 const pageRenderID = document.URL.split("/post/")[1];
 
-function Templatepage() {
+function Postrender() {
   const [blocks, setBlocks] = useState(null);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ function Templatepage() {
   return (
     <div className="notion-block">
         {blocks ? (
-          <NotionRenderer blockMap={blocks} />
+          <NotionRenderer blockMap={blocks}/>
         ) : (
           <p>Loading...</p>
         )}
@@ -30,4 +30,4 @@ function Templatepage() {
   );
 }
 
-export default Templatepage;
+export default Postrender;

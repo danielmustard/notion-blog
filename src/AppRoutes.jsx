@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import Blogpost from "./components/Blogpost"
 import Navbar from "./components/Navbar"
 import About from "./pages/About"
-import Templatepage from "./pages/Templatepage"
+import Postrender from "./pages/Postrender"
 
 
 function AppRoutes() {
@@ -17,7 +17,7 @@ function AppRoutes() {
       {/* Route for About Page */}
       <Route path="/about" element={<><Navbar/><About/></>} />
       
-      <Route path="/post/*" element={<><Navbar/><Templatepage/></>} />
+      <Route path="/post/*" element={<><Navbar/><Postrender/></>} />
       
 
     </Routes>
