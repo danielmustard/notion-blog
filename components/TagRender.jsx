@@ -30,6 +30,7 @@ export default function TagRender(tags) {
           <div
             className="tag"
             style={{ backgroundColor: styleColours[tag]?.color }}
+            key={tag.icon}
           >
             <div className="child">
                 #

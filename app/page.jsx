@@ -20,8 +20,8 @@ const HomePage = async () => {
     <div className="posts">
       <h1 style={{height:100}}>Latest</h1>
       {Object.values(posts).map((post) => (
-        <main style={{visibility: post.Published == false? 'hidden':'visible'}}>
-          <div className="card">
+        <main key={post.id} style={{visibility: post.Published == false? 'hidden':'visible'}}>
+          <div className="card" key={post.id}>
             <div className="datetime">
               <time>{post.Date}</time>
             </div>
