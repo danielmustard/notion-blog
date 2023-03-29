@@ -1,4 +1,4 @@
-import '../static/css/tags.css'
+import '../styles/tags.css'
 export default function TagRender(tags) {
     //an array of tags is passed in, based on this we return mini tag that is attached to each post.
     const styleColours = {
@@ -25,7 +25,7 @@ export default function TagRender(tags) {
     }
     return (
       <div className="tagContainer">
-        {console.log(tags)}
+        {/* {console.log(tags)} */}
         {Object.values(tags).map((tag) => (
           <div
             className="tag"

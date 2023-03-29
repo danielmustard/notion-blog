@@ -45,4 +45,7 @@ main {
 hr{
   padding: 0;
 }
+a.read-more{
+  color: black !important;
+}
 

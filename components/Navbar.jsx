@@ -1,7 +1,5 @@
-import '../static/css/navbar.css'
+import '../styles/navbar.css'
 function Navbar() {
-  
-
     return (
       <nav className="mainNav">
         <div className="left">
@@ -19,4 +17,3 @@ function Navbar() {
   }
   
   export default Navbar
-  

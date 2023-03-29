@@ -1,0 +1,33 @@
+main.notion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.notion-block{
+    display: flex;
+    justify-content: center;
+    
+}
+
+a.notion-link{
+    color: black !important;
+}
+figure > div{
+    padding-bottom: 10px !important;
+}
+/* @media screen and (min-width: 768px) and (max-width: 1920px) {
+    img {
+      max-height: 80%;
+      width: auto;
+    }
+  } */
+
+img{
+    max-width: 45vw;
+    height: auto;
+    margin: auto;
+}
+
+.notion-asset-wrapper{
+    width: unset !important;
+}
