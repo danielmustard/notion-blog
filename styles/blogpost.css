@@ -31,3 +31,8 @@ img{
 .notion-asset-wrapper{
     width: unset !important;
 }
+.notion-code{
+    max-width: 90vw;
+    height: auto;
+    margin: auto;
+}

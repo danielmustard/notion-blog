@@ -7,6 +7,7 @@ async function getAllPosts() {
   try {
     const response = await fetch(`https://notion-api.splitbee.io/v1/table/${NOTION_BLOG_ID}`, {next:{revalidate:60}});
     const data = await response.json();
+    console.log(data)
     return data;
   } catch (error) {
     console.error(error);
@@ -20,7 +21,7 @@ const HomePage = async () => {
     <div className="posts">
       <h1 style={{height:100}}>Latest</h1>
       {Object.values(posts).map((post) => (
-        <main key={post.id} style={{visibility: post.Published == false? 'hidden':'visible'}}>
+        <main key={post.id} style={{display: post.Published == false? 'none':'block'}}>
           <div className="card" key={post.id}>
             <div className="datetime">
               <time>{post.Date}</time>
