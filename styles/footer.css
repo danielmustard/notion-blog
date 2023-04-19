@@ -1,0 +1,19 @@
+body{
+    min-height: 100%;
+    overflow-x: hidden;
+}
+
+footer{
+    height: 2rem;
+    background-color: #f4f5f7;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 3rem;
+}
+
+.iconGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+}
