@@ -1,5 +1,7 @@
 import '../styles/footer.css'
 
+import Link from "next/link";
+
 import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
@@ -7,9 +9,10 @@ const Footer = () => {
     <footer>
         <div className="iconGrid">
             <div className="githubIcon">
-                <i>
-                    <AiFillGithub/>
-                </i>
+              <Link href={'https://github.com/danielmustard'} style={{margin:'0px',cursor:'pointer',padding:'0px'}}>
+                <AiFillGithub/>
+              </Link>
+              
             </div>
         </div>
     </footer>

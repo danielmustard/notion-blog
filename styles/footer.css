@@ -1,6 +1,7 @@
 body{
     min-height: 100%;
     overflow-x: hidden;
+    position: relative;
 }
 
 footer{
@@ -10,10 +11,12 @@ footer{
     justify-content: center;
     width: 100vw;
     margin-top: 3rem;
+    position: absolute;
+    bottom: 0;
+
 }
 
 .iconGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
     place-content: center;
 }

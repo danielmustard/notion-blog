@@ -21,7 +21,7 @@ ul,li{
     justify-content: center;
     color: white;
 }
-a{
+a.mainLink{
     color: white !important;
     text-decoration: none;
     font-size: 1.5pc;
@@ -32,7 +32,7 @@ a{
     font-family: var(--font-sans); */
     color: white;
 }
-:where(a[href]):visited{
+:where(a.mainLink[href]):visited{
     color: white;
 }
 ul{

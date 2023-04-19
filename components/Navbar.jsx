@@ -8,8 +8,8 @@ function Navbar() {
         </div>
         <div className="right">
           <ul>
-            <a href="/">Home</a>
-            <a href="/about">About</a>
+            <a href="/" className='mainLink'>Home</a>
+            <a href="/about" className='mainLink'>About</a>
           </ul>
         </div>
       </nav>
