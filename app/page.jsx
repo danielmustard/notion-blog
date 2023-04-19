@@ -7,7 +7,7 @@ async function getAllPosts() {
   try {
     const response = await fetch(`https://notion-api.splitbee.io/v1/table/${NOTION_BLOG_ID}`, {next:{revalidate:60}});
     const data = await response.json();
-    console.log(data)
+    //console.log(data)
     return data;
   } catch (error) {
     console.error(error);
@@ -30,18 +30,8 @@ const HomePage = async () => {
               <h5>{post.Page}</h5>
               <p>{post.Preview}</p>
             </div>
-            {/* <img src={post.Preview_Image} alt="Card Image"></img> */}
-            {/* <Link href={"/posts/"+ post.id}>Read More</Link> */}
-
+    
             <Link href={`/posts/${post.id}`} className={"read-more"}>Read More</Link>
-
-            {/* <Link href={{
-              pathname: '/posts/',
-              query: {post: post.id}
-            }} style={{color:"#ff0000"}}>Read More</Link> */}
-            
-            
-            {/* <a className='read-more' href={"/posts/" + post.id}>Read more</a> */}
             <TagRender data={post.Tags}/>
             <hr></hr>
           </div>

@@ -11,6 +11,8 @@ main.notion{
 
 a.notion-link{
     color: black !important;
+    font-size: inherit !important;
+    text-decoration: underline;
 }
 figure > div{
     padding-bottom: 10px !important;

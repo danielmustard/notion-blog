@@ -15,12 +15,16 @@ export default function TagRender(tags) {
             icon: "✍️"
         },
         AzureAD:{
-            color: "#F0FFFF",
+            color: "#9BC4D2",
             icon: "☁️"            
         },
         Powershell:{
             color: "#ACDDDE",
             icon: "🐚"
+        },
+        NextJS:{
+          color: "#E97451",
+          icon: "🌱"
         }
     }
     return (
@@ -33,7 +37,7 @@ export default function TagRender(tags) {
             key={tag.icon}
           >
             <div className="child">
-                #
+                
               <i>{styleColours[tag]?.icon}</i>
               <span>{tag}</span>
             </div>
