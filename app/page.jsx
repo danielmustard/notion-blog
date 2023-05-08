@@ -21,12 +21,14 @@ const HomePage = async () => {
     <div className="posts">
       <h1 style={{height:100}}>Latest</h1>
       {Object.values(posts).map((post) => (
-        <main key={post.id} style={{display: post.Published == false? 'none':'block'}}>
+        <main key={post.id} style={{display: post.Published == undefined ? 'none':'block'}}>
+          {/* if post is set to not be published the published status is not returned so we check for undefined*/}
           <div className="card" key={post.id}>
-            <div className="datetime">
+            <div className="datetime" key={post.id}>
               <time>{post.Date}</time>
+              <h1>{post.Published}</h1>
             </div>
-            <div className="title-preview">
+            <div className="title-preview" key={post.id}>
               <h5>{post.Page}</h5>
               <p>{post.Preview}</p>
             </div>
