@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Daniel Mustard',
-  description: '',
+  description: 'Anything related to IT and software development, where I can easily access my notes and share them with others.',
   icons:{
     icon: 'favicon.ico'
   }

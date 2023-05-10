@@ -7,6 +7,7 @@ async function getPageData(id){
 }
 const page = async ({params}) => {
     const pageData = await getPageData(params.id)
+    //could also pass page slug/pagetitle into dynamic route to include slug/pagetitle inside metadata 
   return (
     <NotionRenderer blockMap={pageData}/>
   )
