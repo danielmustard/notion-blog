@@ -40,13 +40,11 @@ main {
   align-self: center;
   justify-self: center;
 }
-.read-more, a.read-more{
-  color: black !important;
-}
+
 hr{
   padding: 0;
 }
-a.read-more{
+/* a.read-more{
   color: black !important;
-}
+} */
 

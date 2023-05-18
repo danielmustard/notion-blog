@@ -9,6 +9,7 @@ export const metadata = {
 
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
+import OpenProps from 'open-props'; // module
 import '../styles/main.css'
 export default function RootLayout({ children }) {
  return (

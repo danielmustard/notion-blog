@@ -33,8 +33,9 @@ const HomePage = async () => {
               <p>{post.Preview}</p>
             </div>
     
-            <Link href={`/posts/${post.id}`} className={"read-more"}>Read More</Link>
+            
             <TagRender data={post.Tags}/>
+            <Link href={`/posts/${post.id}`} className={"read-more"}>Read More</Link>
             <hr></hr>
           </div>
         </main>

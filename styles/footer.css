@@ -6,14 +6,13 @@ body{
 
 footer{
     height: 2rem;
-    background-color: #f4f5f7;
+    background-color: #121212;
     display: flex;
     justify-content: center;
     width: 100vw;
     margin-top: 3rem;
     position: absolute;
     bottom: 0;
-
 }
 
 .iconGrid{
