@@ -25,6 +25,14 @@ export default function TagRender(tags) {
         NextJS:{
           color: "#E97451",
           icon: "🌱"
+        },
+        Homelab:{
+          color: "#9F2B68",
+          icon: "🏠"
+        },
+        Proxmox:{
+          color: "#FA7000",
+          icon: "🖥"
         }
     }
     return (
