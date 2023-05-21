@@ -32,7 +32,7 @@ export default function TagRender(tags) {
         },
         Proxmox:{
           color: "#FA7000",
-          icon: "🖥"
+          icon: "🔸"
         }
     }
     return (
